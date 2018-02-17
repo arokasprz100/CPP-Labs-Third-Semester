@@ -2,9 +2,9 @@
 
 void ClearStudents (int *numberOfStudents, char ***namesList, char ***surnamesList, int **yearsList)
 {
-    if(*numberOfStudents==0){
-        return;
-    }
+    	if(*numberOfStudents==0){
+        	return;
+    	}
 
 	for(int i=0 ; i<*numberOfStudents; i++)
 	{
@@ -13,13 +13,12 @@ void ClearStudents (int *numberOfStudents, char ***namesList, char ***surnamesLi
 	}
 
 	delete [] (*namesList);
-    delete [] (*surnamesList);
-    delete [] (*yearsList);
+    	delete [] (*surnamesList);
+    	delete [] (*yearsList);
 
-    (*namesList)=0;
-    (*surnamesList)=0;
-    (*yearsList)=0;
-
-    *numberOfStudents=0;
+    	(*namesList)=0;
+    	(*surnamesList)=0;
+    	(*yearsList)=0;
+	*numberOfStudents=0;
 
 }
