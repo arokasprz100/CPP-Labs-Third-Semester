@@ -39,7 +39,7 @@ void qInterface(const char* m_Method, const char* m_qName, int m_NqBit, int m_nE
 
 
 	// m_Method = "Add" : dodaj kolejny qCPU do obiektu (TqCPU*)MACHINE:
-	//						 jesli pierwsze qCPU : wywolaj : qCPU_alloc()
+	//			jesli pierwsze qCPU : wywolaj : qCPU_alloc()
 	//                       kolejne : wywolaj : AddCPU()
 	// m_Method = "Redefine" : wydrukuj tylko komunikat
 
