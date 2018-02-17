@@ -78,8 +78,8 @@ void qInterface(const char* m_Method){
 	{
     	case 1:
         {
-           	 for (int i=0; i<NCPU; i++)
-           	 {
+           	for (int i=0; i<NCPU; i++)
+           	{
                 	delete [] MACHINE[i].cpuWord;
             	}
             	delete [] MACHINE;
@@ -109,7 +109,7 @@ void qInterface(const char* m_Method){
         {
             	cout<<endl;
             	cout<<"qInterface::Unknown method, use one of the following:"<<endl;
-           	 cout<<">'Evaluate' evaluate the Machine state"<<endl;
+           	cout<<">'Evaluate' evaluate the Machine state"<<endl;
             	cout<<">'Print' printing the Machine state"<<endl;
             	cout<<">'Release' destroy the Machine"<<endl;
             	cout<<endl;
