@@ -2,10 +2,11 @@
 
 void ClearStudents (int *numberOfStudents, char ***namesList, char ***surnamesList, int **yearsList)
 {
-    if ((*namesList)==0 && (*surnamesList)==0 && (*yearsList)==0)
+    if(*numberOfStudents==0){
         return;
+    }
 
-	for (int i=0 ; i<*numberOfStudents; i++)
+	for(int i=0 ; i<*numberOfStudents; i++)
 	{
 		delete [] ((*namesList)[i]);
 		delete [] ((*surnamesList)[i]);
