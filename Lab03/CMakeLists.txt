@@ -50,7 +50,3 @@ add_executable (TestCzasu TestCzasu.cpp)
 target_link_libraries(TestCzasu boost_system)
 
 add_test (czas TestCzasu)
-
-add_executable (TestSumy TestSumy.cpp)
-
-add_test (suma TestSumy)
