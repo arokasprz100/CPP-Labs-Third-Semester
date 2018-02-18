@@ -34,13 +34,6 @@ CZespolone Dodaj(const CZespolone& liczba1, const CZespolone& liczba2)
 	return CZespolone(liczba1.DajRzeczywista()+liczba2.DajRzeczywista(), liczba1.DajUrojona() + liczba2.DajUrojona());
 }
 
-
-
-
-
-
-
-
 CZespoloneTab::CZespoloneTab(int wielkosc)
 {
 	m_tablicaZespolonych = new CZespolone [wielkosc];
